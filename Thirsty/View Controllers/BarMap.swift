@@ -9,9 +9,22 @@
 import UIKit
 
 class BarMapViewController: UIViewController {
+    //MARK: Setup
+    required init(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
+    
+    override init(nibName nibNameOrNil: String!, bundle nibBundleOrNil: NSBundle!) {
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    convenience override init() {
+        self.init(nibName: nil, bundle: nil)
+        title = NSLocalizedString("bar_tab_title", comment: "Bar View Controller Title")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor.redColor()
-        title = NSLocalizedString("bar_detail_title", comment: "Bar View Controller Title")
     }
 }
