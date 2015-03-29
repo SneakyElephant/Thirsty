@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		93014D431AC8634C00BF1DAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93014D421AC8634C00BF1DAC /* AppDelegate.swift */; };
-		93014D451AC8634C00BF1DAC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93014D441AC8634C00BF1DAC /* ViewController.swift */; };
-		93014D481AC8634C00BF1DAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93014D461AC8634C00BF1DAC /* Main.storyboard */; };
 		93014D4A1AC8634C00BF1DAC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93014D491AC8634C00BF1DAC /* Images.xcassets */; };
 		93014D4D1AC8634C00BF1DAC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93014D4B1AC8634C00BF1DAC /* LaunchScreen.xib */; };
 		93014D591AC8634C00BF1DAC /* ThirstyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93014D581AC8634C00BF1DAC /* ThirstyTests.swift */; };
@@ -30,6 +28,10 @@
 		9378AE0D1AC86598006C82AA /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9378AE0C1AC86598006C82AA /* SystemConfiguration.framework */; };
 		9378AE0F1AC8659E006C82AA /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9378AE0E1AC8659E006C82AA /* libz.dylib */; };
 		9378AE111AC865A7006C82AA /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9378AE101AC865A7006C82AA /* libsqlite3.dylib */; };
+		9378AE1A1AC86A38006C82AA /* BarMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9378AE191AC86A38006C82AA /* BarMap.swift */; };
+		9378AE1C1AC86D0A006C82AA /* EventsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9378AE1B1AC86D0A006C82AA /* EventsList.swift */; };
+		9378AE1E1AC86D16006C82AA /* Favorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9378AE1D1AC86D16006C82AA /* Favorites.swift */; };
+		9378AE201AC86DC5006C82AA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9378AE1F1AC86DC5006C82AA /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,8 +48,6 @@
 		93014D3D1AC8634C00BF1DAC /* Thirsty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Thirsty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93014D411AC8634C00BF1DAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93014D421AC8634C00BF1DAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		93014D441AC8634C00BF1DAC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		93014D471AC8634C00BF1DAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		93014D491AC8634C00BF1DAC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		93014D4C1AC8634C00BF1DAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		93014D521AC8634C00BF1DAC /* ThirstyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThirstyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,6 +71,10 @@
 		9378AE0E1AC8659E006C82AA /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		9378AE101AC865A7006C82AA /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		9378AE121AC865DF006C82AA /* Thirsty-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Thirsty-Bridging-Header.h"; sourceTree = "<group>"; };
+		9378AE191AC86A38006C82AA /* BarMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BarMap.swift; path = "Thirsty/View Controllers/BarMap.swift"; sourceTree = SOURCE_ROOT; };
+		9378AE1B1AC86D0A006C82AA /* EventsList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventsList.swift; path = "Thirsty/View Controllers/EventsList.swift"; sourceTree = SOURCE_ROOT; };
+		9378AE1D1AC86D16006C82AA /* Favorites.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Favorites.swift; path = "Thirsty/View Controllers/Favorites.swift"; sourceTree = SOURCE_ROOT; };
+		9378AE1F1AC86DC5006C82AA /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = "../../../../ios app projects/Production Apps/Thirsty/Thirsty/Localizable.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,10 +134,11 @@
 			isa = PBXGroup;
 			children = (
 				93014D421AC8634C00BF1DAC /* AppDelegate.swift */,
-				93014D441AC8634C00BF1DAC /* ViewController.swift */,
-				93014D461AC8634C00BF1DAC /* Main.storyboard */,
 				93014D491AC8634C00BF1DAC /* Images.xcassets */,
 				93014D4B1AC8634C00BF1DAC /* LaunchScreen.xib */,
+				9378AE171AC86A13006C82AA /* View Controllers */,
+				9378AE161AC86A13006C82AA /* UI Elements */,
+				9378AE181AC86A1A006C82AA /* Data */,
 				9378ADEF1AC86406006C82AA /* Frameworks */,
 				93014D401AC8634C00BF1DAC /* Supporting Files */,
 			);
@@ -145,6 +150,7 @@
 			children = (
 				93014D411AC8634C00BF1DAC /* Info.plist */,
 				9378AE121AC865DF006C82AA /* Thirsty-Bridging-Header.h */,
+				9378AE1F1AC86DC5006C82AA /* Localizable.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -189,6 +195,33 @@
 			);
 			name = Frameworks;
 			path = "../../../../ios app projects/Production Apps/Thirsty/Thirsty/Frameworks";
+			sourceTree = "<group>";
+		};
+		9378AE161AC86A13006C82AA /* UI Elements */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "UI Elements";
+			path = "../../../../ios app projects/Production Apps/Thirsty/Thirsty/UI Elements";
+			sourceTree = "<group>";
+		};
+		9378AE171AC86A13006C82AA /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9378AE191AC86A38006C82AA /* BarMap.swift */,
+				9378AE1B1AC86D0A006C82AA /* EventsList.swift */,
+				9378AE1D1AC86D16006C82AA /* Favorites.swift */,
+			);
+			name = "View Controllers";
+			path = "../../../../ios app projects/Production Apps/Thirsty/Thirsty/View Controllers";
+			sourceTree = "<group>";
+		};
+		9378AE181AC86A1A006C82AA /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Data;
+			path = "../../../../ios app projects/Production Apps/Thirsty/Thirsty/Data";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,7 +304,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93014D481AC8634C00BF1DAC /* Main.storyboard in Resources */,
+				9378AE201AC86DC5006C82AA /* Localizable.strings in Resources */,
 				93014D4D1AC8634C00BF1DAC /* LaunchScreen.xib in Resources */,
 				93014D4A1AC8634C00BF1DAC /* Images.xcassets in Resources */,
 			);
@@ -291,7 +324,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93014D451AC8634C00BF1DAC /* ViewController.swift in Sources */,
+				9378AE1C1AC86D0A006C82AA /* EventsList.swift in Sources */,
+				9378AE1A1AC86A38006C82AA /* BarMap.swift in Sources */,
+				9378AE1E1AC86D16006C82AA /* Favorites.swift in Sources */,
 				93014D431AC8634C00BF1DAC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -315,14 +350,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		93014D461AC8634C00BF1DAC /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				93014D471AC8634C00BF1DAC /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		93014D4B1AC8634C00BF1DAC /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (

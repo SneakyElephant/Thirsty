@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  Thirsty
+
+  Created by Stephen Thomas on 3/19/15.
+  Copyright (c) 2015 Sneaky Elephant. All rights reserved.
+*/
+
+"search_placeholder" = "Venue Name";
+
+//titles
+"bar_detail_title" = "Bar Detail";
+"bar_tab_title" = "Bars";
+"events_tab_title" = "Top Events";
+"favorites_tab_title" = "Favorites";
