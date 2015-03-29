@@ -13,6 +13,12 @@
 		93014D4A1AC8634C00BF1DAC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93014D491AC8634C00BF1DAC /* Images.xcassets */; };
 		93014D4D1AC8634C00BF1DAC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93014D4B1AC8634C00BF1DAC /* LaunchScreen.xib */; };
 		93014D591AC8634C00BF1DAC /* ThirstyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93014D581AC8634C00BF1DAC /* ThirstyTests.swift */; };
+		9378ADF61AC86406006C82AA /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9378ADF01AC86406006C82AA /* Bolts.framework */; };
+		9378ADF71AC86406006C82AA /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9378ADF11AC86406006C82AA /* Parse.framework */; };
+		9378ADF81AC86406006C82AA /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9378ADF21AC86406006C82AA /* ParseCrashReporting.framework */; };
+		9378ADF91AC86406006C82AA /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9378ADF31AC86406006C82AA /* ParseFacebookUtils.framework */; };
+		9378ADFA1AC86406006C82AA /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9378ADF41AC86406006C82AA /* ParseFacebookUtilsV4.framework */; };
+		9378ADFB1AC86406006C82AA /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9378ADF51AC86406006C82AA /* ParseUI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +42,12 @@
 		93014D521AC8634C00BF1DAC /* ThirstyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThirstyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		93014D571AC8634C00BF1DAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93014D581AC8634C00BF1DAC /* ThirstyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirstyTests.swift; sourceTree = "<group>"; };
+		9378ADF01AC86406006C82AA /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		9378ADF11AC86406006C82AA /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		9378ADF21AC86406006C82AA /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseCrashReporting.framework; sourceTree = "<group>"; };
+		9378ADF31AC86406006C82AA /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
+		9378ADF41AC86406006C82AA /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtilsV4.framework; sourceTree = "<group>"; };
+		9378ADF51AC86406006C82AA /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +55,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9378ADFB1AC86406006C82AA /* ParseUI.framework in Frameworks */,
+				9378ADF71AC86406006C82AA /* Parse.framework in Frameworks */,
+				9378ADF81AC86406006C82AA /* ParseCrashReporting.framework in Frameworks */,
+				9378ADF91AC86406006C82AA /* ParseFacebookUtils.framework in Frameworks */,
+				9378ADF61AC86406006C82AA /* Bolts.framework in Frameworks */,
+				9378ADFA1AC86406006C82AA /* ParseFacebookUtilsV4.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +100,7 @@
 				93014D461AC8634C00BF1DAC /* Main.storyboard */,
 				93014D491AC8634C00BF1DAC /* Images.xcassets */,
 				93014D4B1AC8634C00BF1DAC /* LaunchScreen.xib */,
+				9378ADEF1AC86406006C82AA /* Frameworks */,
 				93014D401AC8634C00BF1DAC /* Supporting Files */,
 			);
 			path = Thirsty;
@@ -110,6 +129,20 @@
 				93014D571AC8634C00BF1DAC /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9378ADEF1AC86406006C82AA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9378ADF01AC86406006C82AA /* Bolts.framework */,
+				9378ADF11AC86406006C82AA /* Parse.framework */,
+				9378ADF21AC86406006C82AA /* ParseCrashReporting.framework */,
+				9378ADF31AC86406006C82AA /* ParseFacebookUtils.framework */,
+				9378ADF41AC86406006C82AA /* ParseFacebookUtilsV4.framework */,
+				9378ADF51AC86406006C82AA /* ParseUI.framework */,
+			);
+			name = Frameworks;
+			path = "../../../../ios app projects/Production Apps/Thirsty/Thirsty/Frameworks";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -336,6 +369,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/stephenthomas/Dropbox/ios,
+					app,
+					projects/Production,
+					Apps/Thirsty/Thirsty/Frameworks,
+				);
 				INFOPLIST_FILE = Thirsty/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -346,6 +386,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/stephenthomas/Dropbox/ios,
+					app,
+					projects/Production,
+					Apps/Thirsty/Thirsty/Frameworks,
+				);
 				INFOPLIST_FILE = Thirsty/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -405,6 +452,7 @@
 				93014D5E1AC8634C00BF1DAC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		93014D5F1AC8634C00BF1DAC /* Build configuration list for PBXNativeTarget "ThirstyTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +461,7 @@
 				93014D611AC8634C00BF1DAC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
