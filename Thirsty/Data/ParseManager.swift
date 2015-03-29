@@ -11,6 +11,7 @@ import Foundation
 class ParseManager {
     class func setup() {
         Parse.setApplicationId("5FiNXikvo1bjHfZ3fFCgy2afeT3LsxbI1bnNzpX8", clientKey: "kk7cA8ZRtD7BQc1mdRfImReVAX358iOEqVcJUxRH")
+        /*
         ParseManager.findNearestCity { (result: (city: City?, error: NSError!)) -> Void in
             if let city = result.city? {
                 println("The first city is \(city.name)")
@@ -31,7 +32,7 @@ class ParseManager {
             } else {
                 println("Bars Not Found")
             }
-        }
+        } */
     }
     
     class func findNearestCity (completion: ((city: City?, error: NSError!)) -> Void) {

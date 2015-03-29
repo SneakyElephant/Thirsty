@@ -26,5 +26,6 @@ class BarMapViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor.redColor()
+        edgesForExtendedLayout = .None
     }
 }

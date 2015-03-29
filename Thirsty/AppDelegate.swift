@@ -17,11 +17,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         ParseManager.setup()
         
         let barViewController = BarMapViewController()
+        let barNavController = UINavigationController(rootViewController: barViewController)
+        barNavController.navigationBar.translucent = false
         let eventViewController = EventListViewController()
+        let eventNavController = UINavigationController(rootViewController: eventViewController)
+        eventNavController.navigationBar.translucent = false
         let favoritesViewController = FavoritesViewController()
+        let favoritesNavController = UINavigationController(rootViewController: favoritesViewController)
+        favoritesNavController.navigationBar.translucent = false
         
         tabBarController = UITabBarController()
-        tabBarController?.viewControllers = [barViewController, eventViewController, favoritesViewController]
+        tabBarController?.tabBar.translucent = false
+        tabBarController?.viewControllers = [barNavController, eventNavController, favoritesNavController]
         
         window = UIWindow(frame: UIScreen.mainScreen().bounds)
         window?.rootViewController = tabBarController!
