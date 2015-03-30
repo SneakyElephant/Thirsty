@@ -16,14 +16,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         ParseManager.setup()
         
-        let barViewController = BarMapViewController()
-        let barNavController = UINavigationController(rootViewController: barViewController)
+        let barNavController = UINavigationController(rootViewController: BarMapViewController())
+        let eventNavController = UINavigationController(rootViewController: EventListViewController())
+        let favoritesNavController = UINavigationController(rootViewController: FavoritesViewController())
+        
         barNavController.navigationBar.translucent = false
-        let eventViewController = EventListViewController()
-        let eventNavController = UINavigationController(rootViewController: eventViewController)
         eventNavController.navigationBar.translucent = false
-        let favoritesViewController = FavoritesViewController()
-        let favoritesNavController = UINavigationController(rootViewController: favoritesViewController)
         favoritesNavController.navigationBar.translucent = false
         
         tabBarController = UITabBarController()
@@ -32,7 +30,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window = UIWindow(frame: UIScreen.mainScreen().bounds)
         window?.rootViewController = tabBarController!
-        window?.backgroundColor = UIColor.orangeColor()
         window?.makeKeyAndVisible()
         
         return true

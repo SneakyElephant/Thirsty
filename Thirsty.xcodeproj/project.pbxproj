@@ -27,6 +27,7 @@
 		9378AE1E1AC86D16006C82AA /* Favorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9378AE1D1AC86D16006C82AA /* Favorites.swift */; };
 		9378AE201AC86DC5006C82AA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9378AE1F1AC86DC5006C82AA /* Localizable.strings */; };
 		9378AE241AC87C6E006C82AA /* ParseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9378AE231AC87C6E006C82AA /* ParseManager.swift */; };
+		938FC8B11AC8C91E00604DB7 /* Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938FC8B01AC8C91E00604DB7 /* Layout.swift */; };
 		93B967371AC8AD4500A83A60 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93B967311AC8AD4500A83A60 /* Bolts.framework */; };
 		93B967381AC8AD4500A83A60 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93B967321AC8AD4500A83A60 /* Parse.framework */; };
 		93B967391AC8AD4500A83A60 /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93B967331AC8AD4500A83A60 /* ParseCrashReporting.framework */; };
@@ -71,6 +72,7 @@
 		9378AE1D1AC86D16006C82AA /* Favorites.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Favorites.swift; path = "Thirsty/View Controllers/Favorites.swift"; sourceTree = SOURCE_ROOT; };
 		9378AE1F1AC86DC5006C82AA /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = "../../../../ios app projects/Production Apps/Thirsty/Thirsty/Localizable.strings"; sourceTree = "<group>"; };
 		9378AE231AC87C6E006C82AA /* ParseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ParseManager.swift; path = Thirsty/Data/ParseManager.swift; sourceTree = SOURCE_ROOT; };
+		938FC8B01AC8C91E00604DB7 /* Layout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Layout.swift; path = "Thirsty/UI Elements/Layout.swift"; sourceTree = SOURCE_ROOT; };
 		93B967311AC8AD4500A83A60 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		93B967321AC8AD4500A83A60 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		93B967331AC8AD4500A83A60 /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseCrashReporting.framework; sourceTree = "<group>"; };
@@ -202,6 +204,7 @@
 		9378AE161AC86A13006C82AA /* UI Elements */ = {
 			isa = PBXGroup;
 			children = (
+				938FC8B01AC8C91E00604DB7 /* Layout.swift */,
 			);
 			name = "UI Elements";
 			path = "../../../../ios app projects/Production Apps/Thirsty/Thirsty/UI Elements";
@@ -332,6 +335,7 @@
 				9378AE1A1AC86A38006C82AA /* BarMap.swift in Sources */,
 				9378AE1E1AC86D16006C82AA /* Favorites.swift in Sources */,
 				93014D431AC8634C00BF1DAC /* AppDelegate.swift in Sources */,
+				938FC8B11AC8C91E00604DB7 /* Layout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
