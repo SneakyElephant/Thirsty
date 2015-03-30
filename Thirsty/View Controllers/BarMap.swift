@@ -13,6 +13,7 @@ import UIKit
 class BarMapViewController: UIViewController {
     var locationManager: CLLocationManager?
     var mapView: MKMapView?
+    var overlayView: MapOverlayView?
     
     required init(coder pDecoder: NSCoder) {
         super.init(coder: pDecoder)
@@ -44,8 +45,18 @@ class BarMapViewController: UIViewController {
         
         self.populateMap()
         
+        overlayView = MapOverlayView(frame: view.bounds)
+        overlayView?.setTranslatesAutoresizingMaskIntoConstraints(false)
+        let testContentView = UIView()
+        testContentView.backgroundColor = UIColor.magentaColor()
+        testContentView.layer.borderColor = UIColor.darkGrayColor().CGColor
+        testContentView.layer.borderWidth = 6
+        overlayView?.contentView = testContentView
+        view.addSubview(overlayView!)
+        
         var constraints: [NSLayoutConstraint] = []
         constraints += mapView!.layoutInside(self.view)
+        constraints += overlayView!.layoutInside(self.view)
         self.view.addConstraints(constraints)
     }
 }
@@ -127,8 +138,8 @@ class BarAnnotation: NSObject, MKAnnotation {
 }
 
 class BarAnnotationView: MKAnnotationView {
-    var bar: Bar?
-    let cornerRadius: CGFloat = 7
+    var bar: Bar? = nil
+    private let cornerRadius: CGFloat = 7
     
     convenience init(bar pBar: Bar) {
         self.init(frame: CGRectZero)
@@ -146,7 +157,6 @@ class BarAnnotationView: MKAnnotationView {
     
     //This initializer is "required" but should never be used.
     required init(coder aDecoder: NSCoder) {
-        bar = nil
         super.init(coder: aDecoder)
     }
 }
