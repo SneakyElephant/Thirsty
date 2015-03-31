@@ -17,6 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         ParseManager.setup()
         
         let barNavController = UINavigationController(rootViewController: BarMapViewController())
+        barNavController.navigationBar.barTintColor = UIColor.backgroundColor()
         let eventNavController = UINavigationController(rootViewController: EventListViewController())
         let favoritesNavController = UINavigationController(rootViewController: FavoritesViewController())
         

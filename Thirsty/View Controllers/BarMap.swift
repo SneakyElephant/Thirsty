@@ -14,6 +14,7 @@ class BarMapViewController: UIViewController {
     var locationManager: CLLocationManager?
     var mapView: MKMapView?
     var overlayView: MapOverlayView?
+    var barDetailView: BarDetailView?
     
     required init(coder pDecoder: NSCoder) {
         super.init(coder: pDecoder)
@@ -43,21 +44,18 @@ class BarMapViewController: UIViewController {
         mapView?.delegate = self
         view.addSubview(mapView!)
         
-        self.populateMap()
+        populateMap()
         
         overlayView = MapOverlayView(frame: view.bounds)
         overlayView?.setTranslatesAutoresizingMaskIntoConstraints(false)
-        let testContentView = UIView()
-        testContentView.backgroundColor = UIColor.magentaColor()
-        testContentView.layer.borderColor = UIColor.darkGrayColor().CGColor
-        testContentView.layer.borderWidth = 6
-        overlayView?.contentView = testContentView
+        barDetailView = BarDetailView()
+        overlayView?.contentView = barDetailView!
         view.addSubview(overlayView!)
         
         var constraints: [NSLayoutConstraint] = []
-        constraints += mapView!.layoutInside(self.view)
-        constraints += overlayView!.layoutInside(self.view)
-        self.view.addConstraints(constraints)
+        constraints += mapView!.layoutInside(view)
+        constraints += overlayView!.layoutInside(view)
+        view.addConstraints(constraints)
     }
 }
 

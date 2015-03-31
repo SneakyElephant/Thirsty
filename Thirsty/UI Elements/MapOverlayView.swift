@@ -31,8 +31,8 @@ private class MapOverlayScrollView: UIScrollView {
         
         //only allow touches that are on our sliding view
         if let slidingViewFrame = slidingView?.frame {
-            var parentLocation = self.convertPoint(point, toView: superview)
-            var responseRect = self.convertRect(slidingViewFrame, toView: self.superview)
+            var parentLocation = convertPoint(point, toView: superview)
+            var responseRect = convertRect(slidingViewFrame, toView: superview)
             return CGRectContainsPoint(responseRect, parentLocation)
         }
         
@@ -70,7 +70,7 @@ class MapOverlayView: UIView {
     }
     
     override init(frame: CGRect) {
-        let cellHeight = 60
+        let cellHeight = BarDetailView.topCellHeight
         open = false
         scrollView = MapOverlayScrollView(frame: CGRectMake(0, CGFloat(cellHeight), frame.size.width, frame.size.height - CGFloat(cellHeight)))
         scrollContainerView = UIView()
@@ -81,7 +81,7 @@ class MapOverlayView: UIView {
         scrollView.showsVerticalScrollIndicator = false
         scrollView.bounces = false
         scrollView.setTranslatesAutoresizingMaskIntoConstraints(false)
-        self.addSubview(scrollView)
+        addSubview(scrollView)
         
         scrollContainerView.setTranslatesAutoresizingMaskIntoConstraints(false)
         scrollView.addSubview(scrollContainerView)
@@ -90,7 +90,7 @@ class MapOverlayView: UIView {
         constraints += scrollView.layoutRelativeTo(self, insets: Inset(CGFloat(cellHeight), from: .Top), Inset(0, from: .Left), Inset(0, from: .Right), Inset(0, from: .Bottom))
         constraints.append(NSLayoutConstraint(item: scrollContainerView, attribute:.Height, relatedBy: .Equal, toItem: scrollView, attribute: .Height, multiplier: 2, constant: 0))
         constraints.append(NSLayoutConstraint(item: scrollContainerView, attribute:.Width, relatedBy: .Equal, toItem: self, attribute: .Width, multiplier: 1, constant: 0))
-        self.addConstraints(constraints)
+        addConstraints(constraints)
         
         constraints = []
         constraints += scrollContainerView.layoutInside(scrollView)
