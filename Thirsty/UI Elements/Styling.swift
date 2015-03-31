@@ -39,3 +39,14 @@ extension UIFont {
         return UIFont(name: "Roboto-Light", size: 13)
     }
 }
+
+class StyleManager {
+    class func updateUIStyle () {
+        let navAppearance = UINavigationBar.appearance()
+        navAppearance.barTintColor = UIColor.backgroundColor()
+        navAppearance.translucent = false
+        
+        let tabAppearance = UITabBar.appearance()
+        tabAppearance.translucent = false
+    }
+}
