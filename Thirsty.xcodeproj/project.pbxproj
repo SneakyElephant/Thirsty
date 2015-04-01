@@ -100,7 +100,7 @@
 		93014D521AC8634C00BF1DAC /* ThirstyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThirstyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		93014D571AC8634C00BF1DAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93014D581AC8634C00BF1DAC /* ThirstyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirstyTests.swift; sourceTree = "<group>"; };
-		935A57A71AC9ADD300563F84 /* MapOverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapOverlayView.swift; sourceTree = "<group>"; };
+		935A57A71AC9ADD300563F84 /* MapOverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapOverlayView.swift; path = "Thirsty/UI Elements/MapOverlayView.swift"; sourceTree = SOURCE_ROOT; };
 		9378ADFC1AC8655D006C82AA /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		9378ADFE1AC86563006C82AA /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		9378AE001AC8656B006C82AA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
