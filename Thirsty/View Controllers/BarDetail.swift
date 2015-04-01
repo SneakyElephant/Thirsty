@@ -12,6 +12,14 @@ class BarDetailView: UIView {
     let barNameLabel = UILabel()
     let addressLabel = UILabel()
     let favoriteButton = FavoriteButton()
+    var bar: Bar? {
+        willSet (newBar) {
+            if let newBar = newBar? {
+                barNameLabel.text = newBar.name
+                addressLabel.text = newBar.address + " | 0.3 Miles" //test string
+            }
+        }
+    }
     class var topCellHeight: Float {
         get {
             return 60
@@ -68,13 +76,11 @@ class BarDetailView: UIView {
         topSpacer.setTranslatesAutoresizingMaskIntoConstraints(false)
         topCellView.addSubview(topSpacer)
         
-        barNameLabel.text = "Industry" //test value
         barNameLabel.setTranslatesAutoresizingMaskIntoConstraints(false)
         barNameLabel.font = UIFont.titleFont()
         barNameLabel.textColor = UIColor.whiteColor()
         topCellView.addSubview(barNameLabel)
         
-        addressLabel.text = "1337 12th Street | 0.3 Miles Away" //test value
         addressLabel.setTranslatesAutoresizingMaskIntoConstraints(false)
         addressLabel.font = UIFont.bodyFont()
         addressLabel.textColor = UIColor.whiteColor()

@@ -8,38 +8,6 @@
 
 import Foundation
 
-private class MapOverlayScrollView: UIScrollView {
-    var slidingView: UIView? = nil
-    
-    override init() {
-        super.init()
-    }
-    
-    override init(frame: CGRect) {
-        super.init(frame:frame)
-    }
-    
-    required init(coder pDecoder: NSCoder) {
-        super.init(coder: pDecoder)
-    }
-    
-    override func pointInside(point: CGPoint, withEvent event: UIEvent?) -> Bool {
-        //return if the sliding view is not visible
-        if  (slidingView?.hidden == nil) {
-            return false
-        }
-        
-        //only allow touches that are on our sliding view
-        if let slidingViewFrame = slidingView?.frame {
-            var parentLocation = convertPoint(point, toView: superview)
-            var responseRect = convertRect(slidingViewFrame, toView: superview)
-            return CGRectContainsPoint(responseRect, parentLocation)
-        }
-        
-        return false
-    }
-}
-
 class MapOverlayView: UIView {
     //TODO: Add tap gesture recognizer.
     private let scrollView: MapOverlayScrollView
@@ -112,5 +80,37 @@ class MapOverlayView: UIView {
         var responseRect = scrollView.convertRect(scrollView.slidingView!.frame, toView: scrollView.superview);
         
         return CGRectContainsPoint(responseRect, point);
+    }
+}
+
+private class MapOverlayScrollView: UIScrollView {
+    var slidingView: UIView? = nil
+    
+    override init() {
+        super.init()
+    }
+    
+    override init(frame: CGRect) {
+        super.init(frame:frame)
+    }
+    
+    required init(coder pDecoder: NSCoder) {
+        super.init(coder: pDecoder)
+    }
+    
+    override func pointInside(point: CGPoint, withEvent event: UIEvent?) -> Bool {
+        //return if the sliding view is not visible
+        if  (slidingView?.hidden == nil) {
+            return false
+        }
+        
+        //only allow touches that are on our sliding view
+        if let slidingViewFrame = slidingView?.frame {
+            var parentLocation = convertPoint(point, toView: superview)
+            var responseRect = convertRect(slidingViewFrame, toView: superview)
+            return CGRectContainsPoint(responseRect, parentLocation)
+        }
+        
+        return false
     }
 }
