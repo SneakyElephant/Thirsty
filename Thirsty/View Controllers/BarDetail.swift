@@ -70,7 +70,7 @@ class BarDetailView: UIView {
         let favoriteButtonWidth = BarDetailView.topCellHeight
         let topCellView = UIView()
         topCellView.setTranslatesAutoresizingMaskIntoConstraints(false)
-        topCellView.backgroundColor = UIColor.selectedColor()
+        topCellView.backgroundColor = UIColor.backgroundColor()
         
         let topSpacer = UIView()
         topSpacer.setTranslatesAutoresizingMaskIntoConstraints(false)

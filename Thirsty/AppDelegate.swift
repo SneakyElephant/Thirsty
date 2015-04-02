@@ -11,7 +11,7 @@ import UIKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
-    var tabBarController: UITabBarController?
+    var tabBarController: ThirstyTabBarController?
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         ParseManager.setup()
@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let eventNavController = UINavigationController(rootViewController: EventListViewController())
         let favoritesNavController = UINavigationController(rootViewController: FavoritesViewController())
         
-        tabBarController = UITabBarController()
+        tabBarController = ThirstyTabBarController()
         tabBarController?.viewControllers = [barNavController, eventNavController, favoritesNavController]
         
         window = UIWindow(frame: UIScreen.mainScreen().bounds)

@@ -21,6 +21,7 @@ class EventListViewController: UIViewController {
     convenience override init() {
         self.init(nibName: nil, bundle: nil)
         title = NSLocalizedString("events_tab_title", comment: "Event View Controller Title")
+        tabBarItem.image = UIImage(named: "EventTabIcon")
     }
     
     override func viewDidLoad() {

@@ -21,6 +21,7 @@ class FavoritesViewController: UIViewController {
     convenience override init() {
         self.init(nibName: nil, bundle: nil)
         title = NSLocalizedString("favorites_tab_title", comment: "Favorites View Controller Title")
+        tabBarItem.image = UIImage(named: "HeartFull")
     }
     
     override func viewDidLoad() {

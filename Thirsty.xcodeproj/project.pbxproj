@@ -57,6 +57,7 @@
 		93B9673B1AC8AD4500A83A60 /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93B967351AC8AD4500A83A60 /* ParseFacebookUtilsV4.framework */; };
 		93B9673C1AC8AD4500A83A60 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93B967361AC8AD4500A83A60 /* ParseUI.framework */; };
 		93D582CC1AC93B04003033F7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 93D582CB1AC93B04003033F7 /* Localizable.strings */; };
+		93F151941ACD22910084FF3E /* ThirstyTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F151931ACD22910084FF3E /* ThirstyTabBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -125,6 +126,7 @@
 		93B967351AC8AD4500A83A60 /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseFacebookUtilsV4.framework; path = Thirsty/Frameworks/ParseFacebookUtilsV4.framework; sourceTree = SOURCE_ROOT; };
 		93B967361AC8AD4500A83A60 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseUI.framework; path = Thirsty/Frameworks/ParseUI.framework; sourceTree = SOURCE_ROOT; };
 		93D582CB1AC93B04003033F7 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = Thirsty/Localizable.strings; sourceTree = SOURCE_ROOT; };
+		93F151931ACD22910084FF3E /* ThirstyTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirstyTabBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -278,6 +280,7 @@
 			children = (
 				935A57A71AC9ADD300563F84 /* MapOverlayView.swift */,
 				2F1CC8DB1ACA184A009A9CEB /* SearchBar.swift */,
+				93F151931ACD22910084FF3E /* ThirstyTabBar.swift */,
 				2FB5CA071ACB1F1800A4C58E /* Buttons.swift */,
 				938FC8B01AC8C91E00604DB7 /* Layout.swift */,
 				2F1CC8B21AC9FE63009A9CEB /* Styling.swift */,
@@ -430,6 +433,7 @@
 				2F1CC8B31AC9FE63009A9CEB /* Styling.swift in Sources */,
 				2FB5CA081ACB1F1800A4C58E /* Buttons.swift in Sources */,
 				9378AE1A1AC86A38006C82AA /* BarMap.swift in Sources */,
+				93F151941ACD22910084FF3E /* ThirstyTabBar.swift in Sources */,
 				935A57A81AC9ADD300563F84 /* MapOverlayView.swift in Sources */,
 				9378AE1E1AC86D16006C82AA /* Favorites.swift in Sources */,
 				2F1CC8DA1ACA0712009A9CEB /* BarDetail.swift in Sources */,

@@ -30,6 +30,7 @@ class BarMapViewController: UIViewController {
     convenience override init() {
         self.init(nibName: nil, bundle: nil)
         title = NSLocalizedString("bar_tab_title", comment: "Bar View Controller Title")
+        tabBarItem.image = UIImage(named: "BarTabIcon")
     }
     
     override func viewDidLoad() {

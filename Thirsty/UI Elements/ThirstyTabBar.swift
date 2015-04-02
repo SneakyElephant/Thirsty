@@ -16,25 +16,8 @@ class ThirstyTabBarController: UIViewController {
     private var forceLoad = true //Used to indicate the view controllers array has been changed so the first view is loaded even if 0 was the previously selected index.
     var viewControllers: [UIViewController] = [] {
         didSet {
-            //remove old view controller if needed
-            if selectedIndex < oldValue.count {
-                let oldViewController = oldValue[selectedIndex]
-                oldViewController.willMoveToParentViewController(nil)
-                oldViewController.view.removeFromSuperview()
-                oldViewController.removeFromParentViewController()
-            }
-            
-            //create tab items and populate tab bar
-            var tabBarItems: [ThirstyTabBarItem] = []
-            for index in 0..<viewControllers.count {
-                let viewController = viewControllers[index]
-                let tabBarItem = ThirstyTabBarItem(title: viewController.title, image: viewController.tabBarItem.image, index: index)
-                tabBarItems.append(tabBarItem)
-            }
-            forceLoad = true
-            tabBar.tabBarItems = tabBarItems //this will call back and set our selected index to 0
+            updateViewControllers(oldValue)
         }
-        
     }
     var selectedIndex: Int = 0 {
         willSet {
@@ -93,10 +76,34 @@ class ThirstyTabBarController: UIViewController {
         constraints += tabBar.layoutBelow(contentContainer, distance: 0)
         constraints += tabBar.layoutRelativeTo(view, insets: Inset(0, from: .Left), Inset(0, from: .Right), Inset(0, from: .Bottom))
         view.addConstraints(constraints)
+        
+        updateViewControllers(nil)
     }
     
     @objc func tabSelected() {
         selectedIndex = tabBar.selectedIndex
+    }
+    
+    func updateViewControllers(oldViewControllers: [UIViewController]?) {
+        //remove old view controller if needed
+        if  let oldViewControllers = oldViewControllers? {
+            if selectedIndex < oldViewControllers.count {
+                let oldViewController = oldViewControllers[selectedIndex]
+                oldViewController.willMoveToParentViewController(nil)
+                oldViewController.view.removeFromSuperview()
+                oldViewController.removeFromParentViewController()
+            }
+        }
+        
+        //create tab items and populate tab bar
+        var tabBarItems: [ThirstyTabBarItem] = []
+        for index in 0..<viewControllers.count {
+            let viewController = viewControllers[index]
+            let tabBarItem = ThirstyTabBarItem(title: viewController.title, image: viewController.tabBarItem.image, index: index)
+            tabBarItems.append(tabBarItem)
+        }
+        forceLoad = true
+        tabBar.tabBarItems = tabBarItems //this will call back and set our selected index to 0
     }
 }
 
@@ -122,7 +129,11 @@ class ThirstyTabBar: UIControl {
             for oldButton in tabBarButtons {
                 oldButton.removeFromSuperview()
             }
+            for divider in dividers {
+                divider.removeFromSuperview()
+            }
             tabBarButtons = []
+            dividers = []
             
             var previousButton: ThirstyTabBarButton? = nil
             var constraints: [NSLayoutConstraint] = []
