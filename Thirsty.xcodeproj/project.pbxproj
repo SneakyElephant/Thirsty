@@ -126,7 +126,7 @@
 		93B967351AC8AD4500A83A60 /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseFacebookUtilsV4.framework; path = Thirsty/Frameworks/ParseFacebookUtilsV4.framework; sourceTree = SOURCE_ROOT; };
 		93B967361AC8AD4500A83A60 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseUI.framework; path = Thirsty/Frameworks/ParseUI.framework; sourceTree = SOURCE_ROOT; };
 		93D582CB1AC93B04003033F7 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = Thirsty/Localizable.strings; sourceTree = SOURCE_ROOT; };
-		93F151931ACD22910084FF3E /* ThirstyTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirstyTabBar.swift; sourceTree = "<group>"; };
+		93F151931ACD22910084FF3E /* ThirstyTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ThirstyTabBar.swift; path = "Thirsty/UI Elements/ThirstyTabBar.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
